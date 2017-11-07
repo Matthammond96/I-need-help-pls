@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9195DEB1FB1E183000FD09C /* ARSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9195DEA1FB1E183000FD09C /* ARSceneViewController.m */; };
+		C93BC9471FB0A21900D5614C /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C93BC9461FB0A21200D5614C /* SceneKit.framework */; };
+		C93BC94C1FB0B9FE00D5614C /* SceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93BC94B1FB0B9FE00D5614C /* SceneViewController.swift */; };
+		C97DEAB01FB1F228006462D3 /* ARKitLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = C97DEAAF1FB1F228006462D3 /* ARKitLoad.m */; };
+		C98517411FAE3CC2005C78EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98517401FAE3CC2005C78EB /* AppDelegate.swift */; };
+		C98517461FAE3CC2005C78EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C98517441FAE3CC2005C78EB /* Main.storyboard */; };
+		C98517491FAE3CC2005C78EB /* a.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C98517471FAE3CC2005C78EB /* a.xcdatamodeld */; };
+		C985174B1FAE3CC2005C78EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C985174A1FAE3CC2005C78EB /* Assets.xcassets */; };
+		C985174E1FAE3CC2005C78EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C985174C1FAE3CC2005C78EB /* LaunchScreen.storyboard */; };
+		C9D3CF941FB1CF02009A10CA /* libAR6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D3CF8D1FB1CF01009A10CA /* libAR6.a */; };
+		C9D3CF951FB1CF02009A10CA /* libartvision.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D3CF8F1FB1CF02009A10CA /* libartvision.a */; };
+		C9D3CF961FB1CF02009A10CA /* libglog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D3CF901FB1CF02009A10CA /* libglog.a */; };
+		C9D3CF971FB1CF02009A10CA /* libcurl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D3CF911FB1CF02009A10CA /* libcurl.a */; };
+		C9D3CF981FB1CF02009A10CA /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D3CF921FB1CF02009A10CA /* libjpeg.a */; };
+		C9D3CF991FB1CF02009A10CA /* libboost_serialization.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9D3CF931FB1CF02009A10CA /* libboost_serialization.a */; };
+		C9FFDBF41FB098CA005374DA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9906E971FB07D99000B4307 /* Accelerate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81E9373B874C13101428B222 /* Pods-a.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a.debug.xcconfig"; path = "Pods/Target Support Files/Pods-a/Pods-a.debug.xcconfig"; sourceTree = "<group>"; };
+		9E5D796AF60EF419802EE0CE /* Pods-a.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-a.release.xcconfig"; path = "Pods/Target Support Files/Pods-a/Pods-a.release.xcconfig"; sourceTree = "<group>"; };
+		C90774151FB08FC300FC49DC /* libAR6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAR6.a; path = ARToolkit/lib/libAR6.a; sourceTree = "<group>"; };
+		C90774171FB08FD900FC49DC /* libglog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglog.a; path = "Other Dependencies/libglog.a"; sourceTree = "<group>"; };
+		C90774181FB08FD900FC49DC /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = "Other Dependencies/libcurl.a"; sourceTree = "<group>"; };
+		C90774191FB08FD900FC49DC /* libartvision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libartvision.a; path = "Other Dependencies/libartvision.a"; sourceTree = "<group>"; };
+		C907741A1FB08FD900FC49DC /* libboost_serialization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_serialization.a; path = "Other Dependencies/libboost_serialization.a"; sourceTree = "<group>"; };
+		C907741B1FB08FD900FC49DC /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = "Other Dependencies/libjpeg.a"; sourceTree = "<group>"; };
+		C9195DE91FB1E183000FD09C /* ARSceneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARSceneViewController.h; sourceTree = "<group>"; };
+		C9195DEA1FB1E183000FD09C /* ARSceneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARSceneViewController.m; sourceTree = "<group>"; };
+		C93BC9461FB0A21200D5614C /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		C93BC94B1FB0B9FE00D5614C /* SceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneViewController.swift; sourceTree = "<group>"; };
+		C9704A721FB0959F00BD3BA7 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C9704A751FB095AB00BD3BA7 /* libz.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.tbd; path = usr/lib/libz.1.tbd; sourceTree = SDKROOT; };
+		C9704A761FB095AB00BD3BA7 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		C9704A771FB095AB00BD3BA7 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		C9704A781FB095AB00BD3BA7 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
+		C9704A791FB095AB00BD3BA7 /* libz.1.2.11.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.11.tbd; path = usr/lib/libz.1.2.11.tbd; sourceTree = SDKROOT; };
+		C9704A7F1FB095B900BD3BA7 /* libARWrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARWrapper.a; path = ARToolkit/lib/libARWrapper.a; sourceTree = "<group>"; };
+		C9704A801FB095B900BD3BA7 /* libARgsub_es.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARgsub_es.a; path = ARToolkit/lib/libARgsub_es.a; sourceTree = "<group>"; };
+		C9704A811FB095B900BD3BA7 /* libAR.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAR.a; path = ARToolkit/lib/libAR.a; sourceTree = "<group>"; };
+		C9704A821FB095B900BD3BA7 /* libARICP.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARICP.a; path = ARToolkit/lib/libARICP.a; sourceTree = "<group>"; };
+		C9704A831FB095B900BD3BA7 /* libAR2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAR2.a; path = ARToolkit/lib/libAR2.a; sourceTree = "<group>"; };
+		C9704A841FB095B900BD3BA7 /* libARMulti.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARMulti.a; path = ARToolkit/lib/libARMulti.a; sourceTree = "<group>"; };
+		C9704A851FB095B900BD3BA7 /* libARvideo.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARvideo.a; path = ARToolkit/lib/libARvideo.a; sourceTree = "<group>"; };
+		C9704A861FB095B900BD3BA7 /* libKPM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libKPM.a; path = ARToolkit/lib/libKPM.a; sourceTree = "<group>"; };
+		C9704A871FB095B900BD3BA7 /* libARosg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARosg.a; path = ARToolkit/lib/libARosg.a; sourceTree = "<group>"; };
+		C9704A881FB095B900BD3BA7 /* libARUtil.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARUtil.a; path = ARToolkit/lib/libARUtil.a; sourceTree = "<group>"; };
+		C9704A891FB095B900BD3BA7 /* libARgsub_es2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libARgsub_es2.a; path = ARToolkit/lib/libARgsub_es2.a; sourceTree = "<group>"; };
+		C9704A8A1FB095B900BD3BA7 /* libEden.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEden.a; path = ARToolkit/lib/libEden.a; sourceTree = "<group>"; };
+		C97DEAAE1FB1F228006462D3 /* ARKitLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARKitLoad.h; sourceTree = "<group>"; };
+		C97DEAAF1FB1F228006462D3 /* ARKitLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARKitLoad.m; sourceTree = "<group>"; };
+		C985173D1FAE3CC2005C78EB /* a.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C98517401FAE3CC2005C78EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C98517451FAE3CC2005C78EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C98517481FAE3CC2005C78EB /* a.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = a.xcdatamodel; sourceTree = "<group>"; };
+		C985174A1FAE3CC2005C78EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C985174D1FAE3CC2005C78EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C985174F1FAE3CC2005C78EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9906E971FB07D99000B4307 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C9906E9A1FB07DB4000B4307 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C9906EA51FB07DC4000B4307 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C9906EA71FB07FF9000B4307 /* a-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "a-Bridging-Header.h"; sourceTree = "<group>"; };
+		C9D3CF571FB1CF01009A10CA /* ARVideoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARVideoSource.h; sourceTree = "<group>"; };
+		C9D3CF581FB1CF01009A10CA /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		C9D3CF5A1FB1CF01009A10CA /* videoLuma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoLuma.h; sourceTree = "<group>"; };
+		C9D3CF5B1FB1CF01009A10CA /* videoRGBA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoRGBA.h; sourceTree = "<group>"; };
+		C9D3CF5C1FB1CF01009A10CA /* video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video.h; sourceTree = "<group>"; };
+		C9D3CF5D1FB1CF01009A10CA /* videoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoConfig.h; sourceTree = "<group>"; };
+		C9D3CF5E1FB1CF01009A10CA /* ARTrackerSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackerSquare.h; sourceTree = "<group>"; };
+		C9D3CF5F1FB1CF01009A10CA /* ARController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARController.h; sourceTree = "<group>"; };
+		C9D3CF601FB1CF01009A10CA /* ARTracker2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTracker2D.h; sourceTree = "<group>"; };
+		C9D3CF611FB1CF01009A10CA /* ARTrackableSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackableSquare.h; sourceTree = "<group>"; };
+		C9D3CF621FB1CF01009A10CA /* ARTrackable2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackable2D.h; sourceTree = "<group>"; };
+		C9D3CF641FB1CF01009A10CA /* arg_shader_gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arg_shader_gl.h; sourceTree = "<group>"; };
+		C9D3CF651FB1CF01009A10CA /* arg_mtx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arg_mtx.h; sourceTree = "<group>"; };
+		C9D3CF661FB1CF01009A10CA /* arg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arg.h; sourceTree = "<group>"; };
+		C9D3CF671FB1CF01009A10CA /* glStateCache2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glStateCache2.h; sourceTree = "<group>"; };
+		C9D3CF691FB1CF01009A10CA /* time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
+		C9D3CF6A1FB1CF01009A10CA /* profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = profile.h; sourceTree = "<group>"; };
+		C9D3CF6B1FB1CF01009A10CA /* thread_sub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread_sub.h; sourceTree = "<group>"; };
+		C9D3CF6C1FB1CF01009A10CA /* file_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = file_utils.h; sourceTree = "<group>"; };
+		C9D3CF6D1FB1CF01009A10CA /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		C9D3CF6E1FB1CF01009A10CA /* image_indexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_indexer.h; sourceTree = "<group>"; };
+		C9D3CF6F1FB1CF01009A10CA /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		C9D3CF701FB1CF01009A10CA /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		C9D3CF711FB1CF01009A10CA /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		C9D3CF721FB1CF01009A10CA /* system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = system.h; sourceTree = "<group>"; };
+		C9D3CF731FB1CF01009A10CA /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		C9D3CF741FB1CF01009A10CA /* image_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image_utils.h; sourceTree = "<group>"; };
+		C9D3CF751FB1CF01009A10CA /* android.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = android.h; sourceTree = "<group>"; };
+		C9D3CF761FB1CF01009A10CA /* ARTrackableAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackableAppearance.h; sourceTree = "<group>"; };
+		C9D3CF771FB1CF01009A10CA /* ARTrackable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackable.h; sourceTree = "<group>"; };
+		C9D3CF791FB1CF01009A10CA /* arMulti.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arMulti.h; sourceTree = "<group>"; };
+		C9D3CF7A1FB1CF01009A10CA /* arImageProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arImageProc.h; sourceTree = "<group>"; };
+		C9D3CF7B1FB1CF01009A10CA /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		C9D3CF7C1FB1CF01009A10CA /* icpCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icpCore.h; sourceTree = "<group>"; };
+		C9D3CF7D1FB1CF01009A10CA /* icpCalib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icpCalib.h; sourceTree = "<group>"; };
+		C9D3CF7E1FB1CF01009A10CA /* arFilterTransMat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arFilterTransMat.h; sourceTree = "<group>"; };
+		C9D3CF7F1FB1CF01009A10CA /* matrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = matrix.h; sourceTree = "<group>"; };
+		C9D3CF801FB1CF01009A10CA /* param.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = param.h; sourceTree = "<group>"; };
+		C9D3CF811FB1CF01009A10CA /* paramGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = paramGL.h; sourceTree = "<group>"; };
+		C9D3CF821FB1CF01009A10CA /* ar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ar.h; sourceTree = "<group>"; };
+		C9D3CF831FB1CF01009A10CA /* icp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = icp.h; sourceTree = "<group>"; };
+		C9D3CF841FB1CF01009A10CA /* arConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arConfig.h; sourceTree = "<group>"; };
+		C9D3CF851FB1CF01009A10CA /* ARTrackableInstantOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackableInstantOn.h; sourceTree = "<group>"; };
+		C9D3CF861FB1CF01009A10CA /* AR6_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AR6_c.h; sourceTree = "<group>"; };
+		C9D3CF871FB1CF01009A10CA /* ARView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARView.h; sourceTree = "<group>"; };
+		C9D3CF881FB1CF01009A10CA /* ARTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTracker.h; sourceTree = "<group>"; };
+		C9D3CF891FB1CF01009A10CA /* ARTrackerInstantOn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackerInstantOn.h; sourceTree = "<group>"; };
+		C9D3CF8A1FB1CF01009A10CA /* Platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platform.h; sourceTree = "<group>"; };
+		C9D3CF8B1FB1CF01009A10CA /* ARTrackableMultiSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARTrackableMultiSquare.h; sourceTree = "<group>"; };
+		C9D3CF8D1FB1CF01009A10CA /* libAR6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAR6.a; sourceTree = "<group>"; };
+		C9D3CF8F1FB1CF02009A10CA /* libartvision.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libartvision.a; sourceTree = "<group>"; };
+		C9D3CF901FB1CF02009A10CA /* libglog.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglog.a; sourceTree = "<group>"; };
+		C9D3CF911FB1CF02009A10CA /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcurl.a; sourceTree = "<group>"; };
+		C9D3CF921FB1CF02009A10CA /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libjpeg.a; sourceTree = "<group>"; };
+		C9D3CF931FB1CF02009A10CA /* libboost_serialization.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libboost_serialization.a; sourceTree = "<group>"; };
+		E320612EC61D4EA9AB59CB4A /* Pods_a.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_a.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C985173A1FAE3CC2005C78EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93BC9471FB0A21900D5614C /* SceneKit.framework in Frameworks */,
+				C9D3CF961FB1CF02009A10CA /* libglog.a in Frameworks */,
+				C9D3CF991FB1CF02009A10CA /* libboost_serialization.a in Frameworks */,
+				C9D3CF981FB1CF02009A10CA /* libjpeg.a in Frameworks */,
+				C9FFDBF41FB098CA005374DA /* Accelerate.framework in Frameworks */,
+				C9D3CF941FB1CF02009A10CA /* libAR6.a in Frameworks */,
+				C9D3CF951FB1CF02009A10CA /* libartvision.a in Frameworks */,
+				C9D3CF971FB1CF02009A10CA /* libcurl.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C98517341FAE3CC2005C78EB = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF541FB1CF01009A10CA /* ARToolkit */,
+				C9D3CF8E1FB1CF02009A10CA /* Other Dependencies */,
+				C985173F1FAE3CC2005C78EB /* a */,
+				C985173E1FAE3CC2005C78EB /* Products */,
+				C9906E961FB07D99000B4307 /* Frameworks */,
+				DDE0FF6DF3AA8C6C9A35C445 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C985173E1FAE3CC2005C78EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C985173D1FAE3CC2005C78EB /* a.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C985173F1FAE3CC2005C78EB /* a */ = {
+			isa = PBXGroup;
+			children = (
+				C98517401FAE3CC2005C78EB /* AppDelegate.swift */,
+				C93BC94B1FB0B9FE00D5614C /* SceneViewController.swift */,
+				C9195DE91FB1E183000FD09C /* ARSceneViewController.h */,
+				C9195DEA1FB1E183000FD09C /* ARSceneViewController.m */,
+				C97DEAAE1FB1F228006462D3 /* ARKitLoad.h */,
+				C97DEAAF1FB1F228006462D3 /* ARKitLoad.m */,
+				C98517441FAE3CC2005C78EB /* Main.storyboard */,
+				C985174A1FAE3CC2005C78EB /* Assets.xcassets */,
+				C985174C1FAE3CC2005C78EB /* LaunchScreen.storyboard */,
+				C985174F1FAE3CC2005C78EB /* Info.plist */,
+				C98517471FAE3CC2005C78EB /* a.xcdatamodeld */,
+				C9906EA71FB07FF9000B4307 /* a-Bridging-Header.h */,
+			);
+			path = a;
+			sourceTree = "<group>";
+		};
+		C9906E961FB07D99000B4307 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C93BC9461FB0A21200D5614C /* SceneKit.framework */,
+				C9704A811FB095B900BD3BA7 /* libAR.a */,
+				C9704A831FB095B900BD3BA7 /* libAR2.a */,
+				C9704A801FB095B900BD3BA7 /* libARgsub_es.a */,
+				C9704A891FB095B900BD3BA7 /* libARgsub_es2.a */,
+				C9704A821FB095B900BD3BA7 /* libARICP.a */,
+				C9704A841FB095B900BD3BA7 /* libARMulti.a */,
+				C9704A871FB095B900BD3BA7 /* libARosg.a */,
+				C9704A881FB095B900BD3BA7 /* libARUtil.a */,
+				C9704A851FB095B900BD3BA7 /* libARvideo.a */,
+				C9704A7F1FB095B900BD3BA7 /* libARWrapper.a */,
+				C9704A8A1FB095B900BD3BA7 /* libEden.a */,
+				C9704A861FB095B900BD3BA7 /* libKPM.a */,
+				C9704A761FB095AB00BD3BA7 /* libz.1.1.3.tbd */,
+				C9704A771FB095AB00BD3BA7 /* libz.1.2.5.tbd */,
+				C9704A781FB095AB00BD3BA7 /* libz.1.2.8.tbd */,
+				C9704A791FB095AB00BD3BA7 /* libz.1.2.11.tbd */,
+				C9704A751FB095AB00BD3BA7 /* libz.1.tbd */,
+				C9704A721FB0959F00BD3BA7 /* libsqlite3.0.tbd */,
+				C90774191FB08FD900FC49DC /* libartvision.a */,
+				C907741A1FB08FD900FC49DC /* libboost_serialization.a */,
+				C90774181FB08FD900FC49DC /* libcurl.a */,
+				C90774171FB08FD900FC49DC /* libglog.a */,
+				C907741B1FB08FD900FC49DC /* libjpeg.a */,
+				C90774151FB08FC300FC49DC /* libAR6.a */,
+				C9906EA51FB07DC4000B4307 /* libsqlite3.tbd */,
+				C9906E9A1FB07DB4000B4307 /* libz.tbd */,
+				C9906E971FB07D99000B4307 /* Accelerate.framework */,
+				E320612EC61D4EA9AB59CB4A /* Pods_a.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9D3CF541FB1CF01009A10CA /* ARToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF551FB1CF01009A10CA /* include */,
+				C9D3CF8C1FB1CF01009A10CA /* lib */,
+			);
+			path = ARToolkit;
+			sourceTree = "<group>";
+		};
+		C9D3CF551FB1CF01009A10CA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF561FB1CF01009A10CA /* AR6 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		C9D3CF561FB1CF01009A10CA /* AR6 */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF571FB1CF01009A10CA /* ARVideoSource.h */,
+				C9D3CF581FB1CF01009A10CA /* Error.h */,
+				C9D3CF591FB1CF01009A10CA /* ARVideo */,
+				C9D3CF5E1FB1CF01009A10CA /* ARTrackerSquare.h */,
+				C9D3CF5F1FB1CF01009A10CA /* ARController.h */,
+				C9D3CF601FB1CF01009A10CA /* ARTracker2D.h */,
+				C9D3CF611FB1CF01009A10CA /* ARTrackableSquare.h */,
+				C9D3CF621FB1CF01009A10CA /* ARTrackable2D.h */,
+				C9D3CF631FB1CF01009A10CA /* ARG */,
+				C9D3CF681FB1CF01009A10CA /* ARUtil */,
+				C9D3CF761FB1CF01009A10CA /* ARTrackableAppearance.h */,
+				C9D3CF771FB1CF01009A10CA /* ARTrackable.h */,
+				C9D3CF781FB1CF01009A10CA /* AR */,
+				C9D3CF851FB1CF01009A10CA /* ARTrackableInstantOn.h */,
+				C9D3CF861FB1CF01009A10CA /* AR6_c.h */,
+				C9D3CF871FB1CF01009A10CA /* ARView.h */,
+				C9D3CF881FB1CF01009A10CA /* ARTracker.h */,
+				C9D3CF891FB1CF01009A10CA /* ARTrackerInstantOn.h */,
+				C9D3CF8A1FB1CF01009A10CA /* Platform.h */,
+				C9D3CF8B1FB1CF01009A10CA /* ARTrackableMultiSquare.h */,
+			);
+			path = AR6;
+			sourceTree = "<group>";
+		};
+		C9D3CF591FB1CF01009A10CA /* ARVideo */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF5A1FB1CF01009A10CA /* videoLuma.h */,
+				C9D3CF5B1FB1CF01009A10CA /* videoRGBA.h */,
+				C9D3CF5C1FB1CF01009A10CA /* video.h */,
+				C9D3CF5D1FB1CF01009A10CA /* videoConfig.h */,
+			);
+			path = ARVideo;
+			sourceTree = "<group>";
+		};
+		C9D3CF631FB1CF01009A10CA /* ARG */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF641FB1CF01009A10CA /* arg_shader_gl.h */,
+				C9D3CF651FB1CF01009A10CA /* arg_mtx.h */,
+				C9D3CF661FB1CF01009A10CA /* arg.h */,
+				C9D3CF671FB1CF01009A10CA /* glStateCache2.h */,
+			);
+			path = ARG;
+			sourceTree = "<group>";
+		};
+		C9D3CF681FB1CF01009A10CA /* ARUtil */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF691FB1CF01009A10CA /* time.h */,
+				C9D3CF6A1FB1CF01009A10CA /* profile.h */,
+				C9D3CF6B1FB1CF01009A10CA /* thread_sub.h */,
+				C9D3CF6C1FB1CF01009A10CA /* file_utils.h */,
+				C9D3CF6D1FB1CF01009A10CA /* crypt.h */,
+				C9D3CF6E1FB1CF01009A10CA /* image_indexer.h */,
+				C9D3CF6F1FB1CF01009A10CA /* log.h */,
+				C9D3CF701FB1CF01009A10CA /* zip.h */,
+				C9D3CF711FB1CF01009A10CA /* unzip.h */,
+				C9D3CF721FB1CF01009A10CA /* system.h */,
+				C9D3CF731FB1CF01009A10CA /* ioapi.h */,
+				C9D3CF741FB1CF01009A10CA /* image_utils.h */,
+				C9D3CF751FB1CF01009A10CA /* android.h */,
+			);
+			path = ARUtil;
+			sourceTree = "<group>";
+		};
+		C9D3CF781FB1CF01009A10CA /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF791FB1CF01009A10CA /* arMulti.h */,
+				C9D3CF7A1FB1CF01009A10CA /* arImageProc.h */,
+				C9D3CF7B1FB1CF01009A10CA /* config.h */,
+				C9D3CF7C1FB1CF01009A10CA /* icpCore.h */,
+				C9D3CF7D1FB1CF01009A10CA /* icpCalib.h */,
+				C9D3CF7E1FB1CF01009A10CA /* arFilterTransMat.h */,
+				C9D3CF7F1FB1CF01009A10CA /* matrix.h */,
+				C9D3CF801FB1CF01009A10CA /* param.h */,
+				C9D3CF811FB1CF01009A10CA /* paramGL.h */,
+				C9D3CF821FB1CF01009A10CA /* ar.h */,
+				C9D3CF831FB1CF01009A10CA /* icp.h */,
+				C9D3CF841FB1CF01009A10CA /* arConfig.h */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		C9D3CF8C1FB1CF01009A10CA /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF8D1FB1CF01009A10CA /* libAR6.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		C9D3CF8E1FB1CF02009A10CA /* Other Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				C9D3CF8F1FB1CF02009A10CA /* libartvision.a */,
+				C9D3CF901FB1CF02009A10CA /* libglog.a */,
+				C9D3CF911FB1CF02009A10CA /* libcurl.a */,
+				C9D3CF921FB1CF02009A10CA /* libjpeg.a */,
+				C9D3CF931FB1CF02009A10CA /* libboost_serialization.a */,
+			);
+			path = "Other Dependencies";
+			sourceTree = "<group>";
+		};
+		DDE0FF6DF3AA8C6C9A35C445 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81E9373B874C13101428B222 /* Pods-a.debug.xcconfig */,
+				9E5D796AF60EF419802EE0CE /* Pods-a.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C985173C1FAE3CC2005C78EB /* a */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C98517521FAE3CC2005C78EB /* Build configuration list for PBXNativeTarget "a" */;
+			buildPhases = (
+				118CD16286AFF9467CAF5022 /* [CP] Check Pods Manifest.lock */,
+				C98517391FAE3CC2005C78EB /* Sources */,
+				C985173A1FAE3CC2005C78EB /* Frameworks */,
+				C985173B1FAE3CC2005C78EB /* Resources */,
+				4F39C00BE2BCB4422386CAB1 /* [CP] Embed Pods Frameworks */,
+				2194A4C4BC685B736079B690 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = a;
+			productName = a;
+			productReference = C985173D1FAE3CC2005C78EB /* a.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C98517351FAE3CC2005C78EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Matthew Hammond";
+				TargetAttributes = {
+					C985173C1FAE3CC2005C78EB = {
+						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C98517381FAE3CC2005C78EB /* Build configuration list for PBXProject "a" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C98517341FAE3CC2005C78EB;
+			productRefGroup = C985173E1FAE3CC2005C78EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C985173C1FAE3CC2005C78EB /* a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C985173B1FAE3CC2005C78EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C985174E1FAE3CC2005C78EB /* LaunchScreen.storyboard in Resources */,
+				C985174B1FAE3CC2005C78EB /* Assets.xcassets in Resources */,
+				C98517461FAE3CC2005C78EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		118CD16286AFF9467CAF5022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-a-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2194A4C4BC685B736079B690 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-a/Pods-a-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F39C00BE2BCB4422386CAB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-a/Pods-a-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C98517391FAE3CC2005C78EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98517491FAE3CC2005C78EB /* a.xcdatamodeld in Sources */,
+				C97DEAB01FB1F228006462D3 /* ARKitLoad.m in Sources */,
+				C93BC94C1FB0B9FE00D5614C /* SceneViewController.swift in Sources */,
+				C9195DEB1FB1E183000FD09C /* ARSceneViewController.m in Sources */,
+				C98517411FAE3CC2005C78EB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C98517441FAE3CC2005C78EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C98517451FAE3CC2005C78EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C985174C1FAE3CC2005C78EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C985174D1FAE3CC2005C78EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C98517501FAE3CC2005C78EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C98517511FAE3CC2005C78EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C98517531FAE3CC2005C78EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E9373B874C13101428B222 /* Pods-a.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SG3UWWGPGQ;
+				ENABLE_BITCODE = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_PLATFORM_IOS,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ARToolkit/include";
+				INFOPLIST_FILE = a/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolkit/lib",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthammond.a;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "a/a-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C98517541FAE3CC2005C78EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E5D796AF60EF419802EE0CE /* Pods-a.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SG3UWWGPGQ;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					TARGET_PLATFORM_IOS,
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/ARToolkit/include";
+				INFOPLIST_FILE = a/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ARToolkit/lib",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+					"$(PROJECT_DIR)/Other\\ Dependencies",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.matthammond.a;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "a/a-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C98517381FAE3CC2005C78EB /* Build configuration list for PBXProject "a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98517501FAE3CC2005C78EB /* Debug */,
+				C98517511FAE3CC2005C78EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C98517521FAE3CC2005C78EB /* Build configuration list for PBXNativeTarget "a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C98517531FAE3CC2005C78EB /* Debug */,
+				C98517541FAE3CC2005C78EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C98517471FAE3CC2005C78EB /* a.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C98517481FAE3CC2005C78EB /* a.xcdatamodel */,
+			);
+			currentVersion = C98517481FAE3CC2005C78EB /* a.xcdatamodel */;
+			path = a.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C98517351FAE3CC2005C78EB /* Project object */;
+}
